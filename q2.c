@@ -18,7 +18,9 @@ char *removeDuplicates(char *s) {
 }
 
 int main() {
-    char s[] = "abbaca";
+    char s[1000];
+    PRINTF("Enter string ");
+    gets(s);
     printf("Original string: %s\n", s);
     char *result = removeDuplicates(s);
     printf("String after duplicate removal: %s\n", result);
